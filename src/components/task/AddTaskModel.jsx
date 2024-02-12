@@ -80,7 +80,7 @@ console.log(textValue.tags)
         
               required
             />
-           {errors.title && <span>{errors.title}</span>}
+           {errors.title && <span className='text-red-600'>{errors.title}</span>}
           </div>
          
           <div className="space-y-2 lg:space-y-3">
@@ -95,7 +95,7 @@ console.log(textValue.tags)
             
               required
             ></textarea>
-      {errors.description && <span>{errors.description}</span>}
+      {errors.description && <span className='text-red-600'>{errors.description}</span>}
           </div>
          
           <div
@@ -114,7 +114,7 @@ console.log(textValue.tags)
                 onChange={(e)=> setTextValue({...textValue, tags:e.target.value.split(',')})}
                 required
               />
-            {errors.tags && <span>{errors.tags}</span>}
+            {errors.tags && <span className='text-red-600'>{errors.tags}</span>}
             </div>
           
             <div className="space-y-2 lg:space-y-3">
@@ -132,7 +132,7 @@ console.log(textValue.tags)
                 <option value="Medium">Medium</option>
                 <option value="High">High</option>
               </select>
-              {errors.priority && <span>{errors.priority}</span>}
+              {errors.priority && <span className='text-red-600'>{errors.priority}</span>}
             </div>
           </div>
           
